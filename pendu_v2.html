@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./pendu_v2.css">
+</head>
+<body>
+    <h1>Jeu du pendu</h1>
+    <div id="corpse">
+        <div id="log">
+            <div class="line">
+                <p>Mot à deviner :  </p>
+                <p id="word"></p>
+            </div>
+            <div class="line">
+                <p>Nombres d'essais restants : </p>
+                <p id="try"></p>
+            </div>
+        </div> 
+        <div>
+            <img id="imgHang" src="./asset/img/pendu0.png" alt="">
+        </div> 
+    </div>
+    <div class="clavier">
+        <div id="clavier1">
+            <button class="input" onclick="play(this)">A</button>
+            <button class="input"onclick="play(this)">B</button>
+            <button class="input" onclick="play(this)">C</button>
+            <button class="input" onclick="play(this)">D</button>
+            <button class="input" onclick="play(this)">E</button>
+            <button class="input" onclick="play(this)">F</button>
+            <button class="input" onclick="play(this)">G</button>
+            <button class="input" onclick="play(this)">H</button>
+            <button class="input" onclick="play(this)">I</button>
+            <button class="input" onclick="play(this)">J</button>
+            <button class="input" onclick="play(this)">K</button>
+            <button class="input" onclick="play(this)">L</button>
+            <button class="input" onclick="play(this)">M</button>
+        </div>
+        <div id="clavier2">  
+            <button class="input" onclick="play(this)">N</button>
+            <button class="input" onclick="play(this)">O</button>
+            <button class="input" onclick="play(this)">P</button>
+            <button class="input" onclick="play(this)">Q</button>
+            <button class="input" onclick="play(this)">R</button>
+            <button class="input" onclick="play(this)">S</button>
+            <button class="input" onclick="play(this)">T</button>
+            <button class="input" onclick="play(this)">U</button>
+            <button class="input" onclick="play(this)">V</button>
+            <button class="input" onclick="play(this)">W</button>
+            <button class="input" onclick="play(this)">X</button>
+            <button class="input" onclick="play(this)">Y</button>
+            <button class="input" onclick="play(this)">Z</button>
+        </div>      
+    </div>
+    <div>
+        <button id="replay" onclick="replace()">Rejouer</button>
+    </div>
+    <div id="end"></div>
+
+
+    <script src="./pendu_v2.js"></script>
+</body>
+</html>
